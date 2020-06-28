@@ -1,6 +1,8 @@
-# adicup3029-blinky
-A simple blinky example using CMake for EVAL-ADICUP3029 platform
+# ADICUP3029 blinky
 
+A simple blinky example using CMake for [EVAL-ADICUP3029](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/EVAL-ADICUP3029.html) platform.
+
+![](https://www.analog.com/-/media/analog/en/evaluation-board-images/images/eval-adicup3029-angle-web.gif?la=en&h=500&thn=1&hash=AC90B1ECD6EDB1A50AA636027C404D8F)
 
 ## Download `arm-none-eabi` cross compiler
 
