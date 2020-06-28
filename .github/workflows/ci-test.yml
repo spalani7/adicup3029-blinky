@@ -22,7 +22,9 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
+    - name: install cross-compiler
+      run: sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi
+
     - name: download packs
       run: |
         wget https://github.com/ARM-software/CMSIS_5/releases/download/5.4.0/ARM.CMSIS.5.4.0.pack
