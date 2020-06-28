@@ -11,6 +11,14 @@ project(aducm3029ex	VERSION ${PROJ_VERSION} LANGUAGES C)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wl,--gc-sections ")
 
+set(CSP "${PROJECT_SOURCE_DIR}/ARM.CMSIS.5.4.0")
+set(BSP "${PROJECT_SOURCE_DIR}/AnalogDevices.EVAL-ADICUP3029_BSP.1.1.0")
+set(DFP "${PROJECT_SOURCE_DIR}/AnalogDevices.ADuCM302x_DFP.3.2.0")
+
+include_directories(${DFP}/Include)
+include_directories(${DFP}/Include/config)
+include_directories(${CSP}/CMSIS/Core/Include/)
+
 set(APP_PATH "${BSP}/Boards/EVAL-ADICUP3029/Examples/drivers/gpio/blinky_example")
 set(SYS_STARTUP_PATH "${DFP}/Source")
 set(LINKER_SCRIPT "${SYS_STARTUP_PATH}/GCC/ADuCM3029.ld")
