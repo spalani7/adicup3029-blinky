@@ -1,4 +1,4 @@
-# ADICUP3029 blinky
+# ADICUP3029 blinky ![CI](https://github.com/spalani7/adicup3029-blinky/workflows/CI/badge.svg?branch=master)
 
 A simple blinky example using CMake for [EVAL-ADICUP3029](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/EVAL-ADICUP3029.html) platform.
 
