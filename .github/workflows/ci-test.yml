@@ -25,7 +25,6 @@ jobs:
     # Runs a single command using the runners shell
     - name: download packs
       run: |
-        cd adicup3029-blinky
         wget https://github.com/ARM-software/CMSIS_5/releases/download/5.4.0/ARM.CMSIS.5.4.0.pack
         wget http://download.analog.com/tools/EZBoards/CM302x/Releases/AnalogDevices.ADuCM302x_DFP.3.2.0.pack
         wget http://download.analog.com/tools/EZBoards/ADICUP3029/Releases/AnalogDevices.EVAL-ADICUP3029_BSP.1.1.0.pack
