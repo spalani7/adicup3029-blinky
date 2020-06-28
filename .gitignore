@@ -1,2 +1,5 @@
 .DS_Store
 build
+ARM.CMSIS.5.4.0
+AnalogDevices.ADuCM302x_DFP.3.2.0
+AnalogDevices.EVAL-ADICUP3029_BSP.1.1.0

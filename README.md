@@ -25,6 +25,14 @@ A simple blinky example using CMake for [EVAL-ADICUP3029](https://www.analog.com
 
 `Note:` The above packs are downloaded as `*.pack`. This can be extracted using any archive file extractor similar to zip.
 
+### Extract packs
+
+```bash
+$ cd adicup3029-blinky
+$ unzip ARM.CMSIS.5.4.0.pack -d ARM.CMSIS.5.4.0
+$ unzip AnalogDevices.ADuCM302x_DFP.3.2.0.pack -d AnalogDevices.ADuCM302x_DFP.3.2.0
+$ unzip AnalogDevices.EVAL-ADICUP3029_BSP.1.1.0.pack -d AnalogDevices.EVAL-ADICUP3029_BSP.1.1.0
+```
 
 ### Build
 ```bash
