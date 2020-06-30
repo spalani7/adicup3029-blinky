@@ -1,0 +1,6 @@
+[
+    {
+        "name": "arm-none-eabi GCC",
+        "toolchainFile": "./aducm3029.cmake"
+    }
+]
