@@ -11,7 +11,10 @@ A simple blinky example using CMake for [EVAL-ADICUP3029](https://www.analog.com
 * [From Arm](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
 * [From xPack](https://xpack.github.io/arm-none-eabi-gcc/install/)
 * [From Launchpad](https://launchpad.net/gcc-arm-embedded)
-
+* Pre-compiled binaries from `apt` (only debian)
+```bash
+sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi
+```
 
 ### Download CMSIS Pack, Device Family Pack (DFP) and Board Support Pack (BSP)
 
