@@ -10,31 +10,12 @@
             "request": "launch",
             "cwd": "${workspaceRoot}",
             "target": "${workspaceRoot}/build/blinky.elf",
-            "gdbpath" : "/Users/spalani/Library/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.7.1/.content/bin/arm-none-eabi-gdb",
+            "gdbpath" : "${env:TOOLCHAINROOT}/bin/arm-none-eabi-gdb",
             "autorun": [
                 "target remote localhost:3333",
                 "file build/blinky.elf",
                 "load build/blinky.elf",
                 "break main",
-                // "load",
-                // "monitor reset"
-                ]
-        },
-        {
-            "name": "cortex-GDB",
-            "type": "cortex-debug",
-            "request": "launch",
-            "cwd": "${workspaceRoot}",
-            "executable": "${workspaceRoot}/build/blinky.elf",
-            "serverpath": "/Users/spalani/anaconda2/envs/pyocd/bin/pyocd",
-            "servertype" : "pyocd",
-            "serverArgs": ["gdbserver"],
-            "interface": "",
-            "toolchainPrefix": "arm-none-eabi",
-            "runToMain": true,
-            "armToolchainPath": "/Users/spalani/Library/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.7.1/.content/bin/",
-            "preLaunchCommands": [
-                "target remote localhost:3333",
                 // "load",
                 // "monitor reset"
                 ]
