@@ -33,6 +33,22 @@ $ unzip AnalogDevices.ADuCM302x_DFP.3.2.0.pack -d AnalogDevices.ADuCM302x_DFP.3.
 $ unzip AnalogDevices.EVAL-ADICUP3029_BSP.1.1.0.pack -d AnalogDevices.EVAL-ADICUP3029_BSP.1.1.0
 ```
 
+### Set environment variables
+For Debian linux or mac OSX:  
+```
+export TOOLCHAINROOT="<path to cross compiler directory containing 'bin' directory>"
+export CMSISROOT="<path to directory containing CMSIS pack>"
+export ADIPACKSROOT="<path to directory BSP and DFP packs>"
+```
+
+Default values:  
+```
+TOOLCHAINROOT="/usr"
+CMSISROOT="./"
+ADIPACKSROOT="./"
+```
+
+
 ### Build
 ```bash
 $ cd adicup3029-blinky
